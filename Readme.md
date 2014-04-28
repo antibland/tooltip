@@ -9,7 +9,7 @@ it makes snese to reuse the text already contained in its `aria-label`.
 <a
   class="tooltip"
   id="one" href="#"
-  aria-label="First description of the link">I'm a link
+  aria-label="I'm the popup hover text">I'm a link
 </a>
 ```
 
