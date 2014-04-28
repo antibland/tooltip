@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Tooltip Plugin</title>
+  <style>
+    body {
+      padding-top: 2em;
+    }
+    .tooltip_message {
+      -webkit-transition: all 0s;
+      -webkit-transform: translate3d(0, 0, 0);
+      margin:8px;
+      padding:8px;
+      border:1px solid blue;
+      background-color:yellow;
+      position: absolute;
+      z-index: 2;
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 2em;
+    }
+  </style>
+</head>
+<body>
+  <a class="tooltip" id="one" href="#" aria-label="First description of the link">I'm a link</a>
+  <a class="tooltip" id="two" href="#" aria-label="Second description of the link">I'm a link</a>
+  <a class="tooltip" id="three" href="#" aria-label="Third description of the link">I'm a link</a>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".tooltip").tooltip();
+    });
+  </script>
+</body>
+</html>
