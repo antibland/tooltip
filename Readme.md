@@ -9,8 +9,8 @@ Accessibility is one aspect often lacking from tooltip plugins. When a user hove
   href="#"
   class="tooltip"
   aria-haspopup="true"
-  data-popup-content="Second popup with 5% <strong>real</strong> HTML">
-  I also have a toolip
+  data-tooltip-content="Tooltip with 5% <strong>real</strong> HTML">
+  I contain a toolip
 </a>
 ```
 
