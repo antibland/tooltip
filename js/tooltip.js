@@ -10,17 +10,17 @@ $(document).ready(function() {
             });
           },
           showTip = function(event) {
-            var popup_content = $(this).attr("data-popup-content");
+            var tooltip_content = $(this).attr("data-tooltip-content");
             hideTip();
-            setTipContent(popup_content);
+            setTipContent(tooltip_content);
             changeTipPosition(event);
           },
           hideTip = function() {
             $(".tooltip_message").remove();
           },
-          setTipContent = function(popup_content) {
+          setTipContent = function(tooltip_content) {
             $tooltip_message
-              .html(popup_content)
+              .html(tooltip_content)
               .appendTo('body');
           };
 
