@@ -33,9 +33,20 @@
   </style>
 </head>
 <body>
-  <a class="tooltip" id="one" href="#" aria-label="First description of the link">I'm a link</a>
-  <a class="tooltip" id="two" href="#" aria-label="Second description of the link">I'm a link</a>
-  <a class="tooltip" id="three" href="#" aria-label="Third description of the link">I'm a link</a>
+  <a
+    href="#"
+    class="tooltip"
+    aria-haspopup="true"
+    data-popup-content="First description of the link">
+    I have a tooltip
+  </a>
+  <a
+    href="#"
+    class="tooltip"
+    aria-haspopup="true"
+    data-popup-content="Second popup with 5% <strong>real</strong> HTML">
+    I also have a toolip
+  </a>
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/tooltip.js"></script>
   <script>

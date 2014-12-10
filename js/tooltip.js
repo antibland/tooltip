@@ -10,17 +10,17 @@ $(document).ready(function() {
             });
           },
           showTip = function(event) {
-            var text = $(this).attr("aria-label");
+            var popup_content = $(this).attr("data-popup-content");
             hideTip();
-            setTipText(text);
+            setTipContent(popup_content);
             changeTipPosition(event);
           },
           hideTip = function() {
             $(".tooltip_message").remove();
           },
-          setTipText = function(text) {
+          setTipContent = function(popup_content) {
             $tooltip_message
-              .html(text)
+              .html(popup_content)
               .appendTo('body');
           };
 
