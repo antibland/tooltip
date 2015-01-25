@@ -10,7 +10,10 @@ Accessibility is one aspect often lacking in web development. Tooltip popups sho
   class="tooltip"
   aria-haspopup="true"
   data-tooltip-content="Tooltip with 5% <strong>real</strong> HTML">
-  I contain a toolip
+  <span 
+    class="anchor-text" 
+    role="presentation">I contain a toolip
+  </span>
 </a>
 ```
 
