@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $.fn.tooltip = function() {
     return this.each(function() {
-      var $tooltip_message = $("<div class='tooltip-message'></div"),
+      var $tooltip,
           changeTipPosition = function(event, action) {
             var xPos, yPos, $target;
 
@@ -14,25 +14,22 @@ $(document).ready(function() {
               yPos = event.pageY;
             }
 
-            $tooltip_message.css({
+            $tooltip.css({
               top: yPos + "px",
               left: xPos + "px"
             });
           },
           showTip = function(event, action) {
-            $target = action === "keyboard" ? $(event.target) : $(this);
-            var tooltip_content = $target.attr("data-tooltip-content");
+            var $target    = (action === "keyboard") ? $(event.target) : $(this),
+                tooltip_id = $target.attr("aria-describedby");
+
             hideTip();
-            setTipContent(tooltip_content);
+            $tooltip = $("#" + tooltip_id);
+            $tooltip.attr("aria-hidden", false);
             changeTipPosition(event, action);
           },
           hideTip = function() {
-            $(".tooltip-message").remove();
-          },
-          setTipContent = function(tooltip_content) {
-            $tooltip_message
-              .html(tooltip_content)
-              .appendTo('body');
+            $("[role=tooltip]").attr("aria-hidden", true);
           };
 
       $(this).on({

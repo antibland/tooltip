@@ -9,12 +9,16 @@ Accessibility is one aspect often lacking in web development. Tooltip popups sho
   href="#"
   class="tooltip"
   aria-haspopup="true"
-  data-tooltip-content="Tooltip with 5% <strong>real</strong> HTML">
-  <span 
-    class="anchor-text" 
-    role="presentation">I contain a toolip
+  aria-describedby="tip1">
+  <span
+    class="anchor-text"
+    role="presentation">I contain a tooltip
   </span>
 </a>
+
+<div role="tooltip" id="tip1" aria-hidden="true">
+  Tooltip text goes <strong>here</strong>
+</div>
 ```
 
 ## Initialize
