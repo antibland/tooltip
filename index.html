@@ -6,6 +6,11 @@
   <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
 
   <style>
+    #container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
     body {
       padding: 2em;
     }
@@ -57,32 +62,34 @@
   </style>
 </head>
 <body>
-  <h1>Accessible Tooltip</h1>
-  <main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptas in hic id nisi tenetur aperiam et! Porro, temporibus,
-      <a
-        href="#"
-        class="tooltip"
-        aria-haspopup="true"
-        data-tooltip-content="First tooltip">
-        <span
-          class="anchor-text"
-          role="presentation">I have a tooltip
-        </span>
-      </a>
-      assumenda commodi natus cumque quisquam reiciendis fugit provident voluptates eaque asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, inventore, quae, rerum repellendus at est neque vitae
-      <a
-        href="#"
-        class="tooltip"
-        aria-haspopup="true"
-        data-tooltip-content="Second tooltip with 5% <strong><em>real</em></strong> HTML">
-        <span
-          class="anchor-text"
-          role="presentation">I also have a toolip
-        </span>
-      </a>
-      facere numquam autem ducimus ipsa itaque modi ex eius facilis incidunt delectus in.</p>
-  </main>
+  <div id="container">
+    <h1>Accessible Tooltip</h1>
+    <main>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptas in hic id nisi tenetur aperiam et! Porro, temporibus,
+        <a
+          href="#"
+          class="tooltip"
+          aria-haspopup="true"
+          data-tooltip-content="First tooltip">
+          <span
+            class="anchor-text"
+            role="presentation">I have a tooltip
+          </span>
+        </a>
+        assumenda commodi natus cumque quisquam reiciendis fugit provident voluptates eaque asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, inventore, quae, rerum repellendus at est neque vitae
+        <a
+          href="#"
+          class="tooltip"
+          aria-haspopup="true"
+          data-tooltip-content="Second tooltip with 5% <strong><em>real</em></strong> HTML">
+          <span
+            class="anchor-text"
+            role="presentation">I also have a toolip
+          </span>
+        </a>
+        facere numquam autem ducimus ipsa itaque modi ex eius facilis incidunt delectus in.</p>
+    </main>
+  </div>
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/tooltip.js"></script>
