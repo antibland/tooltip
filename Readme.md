@@ -2,6 +2,10 @@
 
 Accessibility is one aspect often lacking in web development. Tooltip popups should happen when a user hovers or focuses over a given target element.
 
+## Browser Support
+
+IE8+, Chrome, Firefox, Opera, Safari, iOS Safari, Android
+
 ## Example Markup
 
 ```html
@@ -20,12 +24,12 @@ Accessibility is one aspect often lacking in web development. Tooltip popups sho
   Tooltip text goes <strong>here</strong>
 </div>
 ```
-###On Hover###
+### On Hover
 <p align="center">
   <img src="https://dl.dropboxusercontent.com/u/24799515/img_share/on_hover.jpg" alt="">
 </p>
 
-###On Focus###
+### On Focus
 <p align="center">
   <img src="https://dl.dropboxusercontent.com/u/24799515/img_share/on_focus.jpg" alt="">
 </p>
