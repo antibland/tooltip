@@ -35,7 +35,7 @@ $(document).ready(function() {
       $(this).on({
         mousemove: changeTipPosition,
         mouseenter: showTip,
-        focus: function() {
+        focus: function(event) {
           showTip(event, 'keyboard');
         },
         mouseleave: hideTip,
