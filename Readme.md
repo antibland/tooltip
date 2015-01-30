@@ -6,7 +6,7 @@ Accessibility is one aspect often lacking in web development. Tooltip popups sho
 
 IE8+, Chrome, Firefox, Opera, Safari, iOS Safari, Android
 
-## Example Markup
+## Markup
 
 ```html
 <a
