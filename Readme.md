@@ -8,6 +8,7 @@ IE8+, Chrome, Firefox, Opera, Safari, iOS Safari, Android
 
 ## Markup
 
+When creating a tooltip, make sure the actual tooltip (the element containing `role="tooltip"`) has a unique `id`, and that source element points to that `id` in its `aria-describedby`. 
 ```html
 <a
   href="#"
@@ -24,6 +25,7 @@ IE8+, Chrome, Firefox, Opera, Safari, iOS Safari, Android
   Tooltip text goes <strong>here</strong>
 </div>
 ```
+
 ### On Hover
 <p align="center">
   <img src="https://dl.dropboxusercontent.com/u/24799515/img_share/on_hover.jpg" alt="">
