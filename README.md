@@ -1,4 +1,4 @@
-# An Accessible jQuery Tooltip Plugin
+# An Accessible Tooltip Plugin
 
 Accessibility is one aspect often lacking in web development. Tooltip popups should happen when a user hovers or focuses over a given target element.
 
